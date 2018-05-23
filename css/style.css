@@ -1,0 +1,109 @@
+
+/* Stiluri globale */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    width; 100%;
+	background: #282a2e;
+	color: #f7f7f7;
+	
+}
+
+
+/* ......................Stiluri bara navigare....................... */
+.navbar {
+	margin-bottom: 0;
+    padding: .8rem;
+}
+   
+    
+.navbar-inverse {
+	background: #2E2F31;
+	border: 0;
+}
+.navbar-inverse .navbar-nav li a {
+	color: #f7f7f7;
+	font-size: 1.1em;
+}
+.navbar-inverse .navbar-nav li p:hover {
+	color: #80cd32;
+}
+.activ 
+{
+    color: #80cd32;
+}
+
+.navbar-brand, img {
+  height: 100%;
+  width: auto;
+}
+.dropdown-menu {
+	background: #2E2F31;
+	border-radius: 0;
+	border: 0;
+}
+.dropdown-menu li a {
+	padding: 10px;
+}
+.navbar-inverse .navbar-nav .dropdown-menu li a:hover {
+	background:  #2E2F31;
+}
+
+
+/* ........................Stiluri text si imagine top............... */
+
+#myCarousel
+{
+    margin: 0px auto 0px auto;  /* Ordinea: top – right – bottom – left */
+      background-size: cover;
+}
+
+
+
+/*................Jumbotron................................*/
+.jumbotron {
+   height: 429px;
+	background: #453a34;
+	color: white;
+	text-align: left;
+    
+}
+.jumbotron p {
+	color: white;
+	font-size: 26px;
+}
+
+
+
+
+/*..round cycle ...*/
+.circle-singleline {
+    width:101px;
+    height: 101px;
+    border-radius: 50%;
+    font-size: 65px;
+    line-height: 101 px;
+    text-align: center;    
+    background: #313338;
+    color: #fff;
+}
+/*.......................Footer..........................................*/
+.footer {
+    
+    
+   background: #2E2F31;
+     padding: .8rem;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+}
+
+
+footer p {
+   
+}
