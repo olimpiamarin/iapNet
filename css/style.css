@@ -8,7 +8,7 @@ body
 }
 
 /* ............PAGE CONTAINER....... */
-@media (min-width: 600px) {
+@media (max-width: 600px) {
 	.container { width: 700px; }
 }
 @media (min-width: 992px) {
