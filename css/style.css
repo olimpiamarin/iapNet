@@ -1,42 +1,65 @@
-
-/* Stiluri globale */
-* {
-    box-sizing: border-box;
+body
+{
+	background: #282a2e;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
+	position: relative;
+    color: white;
 }
 
-body {
-    height: 100%;
-    width; 100%;
-	background-color: #282a2e;
-	color: #f7f7f7;
-	
+/* ............PAGE CONTAINER....... */
+@media (min-width: 600px) {
+	.container { width: 700px; }
+}
+@media (min-width: 992px) {
+	.container { width: 900px; }
+}
+@media (min-width: 1200px) {
+	.container { width: 1000px;	}
 }
 
 
-/* ......................Stiluri bara navigare....................... */
+
+/*........... NAVIGATION........... */
+/* ..........search icon ....................*/
+
+#home 
+{
+    padding-top: 68px;
+}
 .navbar {
-	margin-bottom: 0;
-    padding: .8rem;
+	
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+  padding: 10px;
+  -webkit-box-shadow: 0 2px 4px rgba(1, 1, 1, 0.15) ;
+  -moz-box-shadow: 0 2px 4px rgba(1, 1, 1, 0.15) ;
+  box-shadow: 0 2px 4px rgba(1, 1, 1, 0.15) ;
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
-   
-    
+
+
 .navbar-inverse {
 	background: #2E2F31;
 	border: 0;
+    
 }
 .navbar-inverse .navbar-nav li a {
 	color: #f7f7f7;
 	font-size: 1.1em;
 }
-.navbar-inverse .navbar-nav li p:hover {
-	color: #80cd32;
-}
+
 .activ 
 {
     color: #80cd32;
 }
 
-.navbar-brand, img {
+.navbar-brand img {
   height: 100%;
   width: auto;
 }
@@ -46,24 +69,213 @@ body {
 	border: 0;
 }
 .dropdown-menu li a {
-	padding: 10px;
+	padding: 7px;
 }
 .navbar-inverse .navbar-nav .dropdown-menu li a:hover {
 	background:  #2E2F31;
 }
 
-
-/* ........................Stiluri text si imagine top............... */
-
-#myCarousel
+.navbar-inverse
 {
-    margin: 0px auto 0px auto;  /* Ordinea: top – right – bottom – left */
-      background-size: cover;
+	background: #2E2F31;
+	border: none;
+	margin: 0;
+}
+.navbar-default .navbar-brand
+{
+    display: block;
+	font-weight: 100px;
+	font-size: 30px;
+	padding: 10px 0 0 0;
+	height: 65px;
+	line-height: 40px;
+}
+
+.navbar-inverse .nav li a:hover
+{
+	color: #80cd32;
+}
+
+.navbar-inverse .navbar-toggle
+{
+	border: none;
+	padding-top: 15px;
+}
+.navbar-inverse .navbar-toggle .icon-bar
+{
+	background: #80cd32;
+	border-color: transparent;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus { background-color: transparent }
+#home { padding-top: 65px; }
+#home .navbar-inverse .nav li a:hover a:active
+
+
+/*.................CAROUSEL.....................*/
+
+
+.carousel-img
+{
+    margin-top: px;
+    width: 100%;
+    height: 100%; 
+    
+}
+
+.carousel-caption {
+      max-width: 100%;
+      margin:0 auto;
+      top: 200px;
+    left: 20px;
+      text-align:center;
+    
+}
+.carousel-title {
+	color: white;
+   position: absolute;
+   display: center;
+    text-align: center;
+    width: 100%;
+  height: 100%;
+    padding-left: 8.3em;
+   
+}
+.carousel-title p
+{
+    text-align: left;
+    color: white;
+	font-size: 2.5em;
+}
+.carousel-title h1
+{
+   text-align: left;
+
+    color: white;
+	font-size:5em;
+   
 }
 
 
+.carousel-link0 {
+ 
+    position: absolute;
+  display:block;
+    left: 710px;
+    bottom: -15px;
+    
 
-/*................Jumbotron................................*/
+}
+.carousel-link1 {
+    position: absolute;
+  display:block;
+    left: 875px;
+    bottom: 121px;
+   
+    
+  
+
+}
+.carousel-link2 {
+
+     position: absolute;
+  display:block;
+    left: 864px;
+    bottom: 240px;
+
+}
+.carousel-link3 {
+
+     position: absolute;
+  display:block;
+    left: 953px;
+    bottom: 286px;
+
+}
+.carousel-link4 {
+
+     position: absolute;
+  display:block;
+    left: 883px;
+    bottom: 378px;
+
+}
+.carousel-link5 {
+
+     position: absolute;
+  display:block;
+    left: 1000px;
+    bottom:220px;
+
+}
+.carousel-link6 {
+
+     position: absolute;
+  display:block;
+    left: 985px;
+    bottom: 410px;
+
+}
+.carousel-link7 {
+
+     position: absolute;
+  display:block;
+    left: 1017px;
+    bottom: 504px;
+
+}
+
+.carouselRightIcon
+{
+    width: 100%;
+    max-width: 25px;
+    height: 100%;
+    max-height: 25px;
+    position: absolute;
+    align-items: center;
+}
+/* ............SERVICES PAGE-features..........*/
+
+.features
+{
+	background: #282a2e;
+	border-bottom: 1px solid #f0f0f0;
+	padding: 60px 0 60px 0;
+}
+.features h2
+{
+	font-weight: 400;
+	padding-bottom: 20px;
+}
+.features h3
+{
+	font-weight: 400;
+	padding-bottom: 6px;
+}
+.features .fa
+{
+	background: #303030;
+	border-radius: 50%;
+	color: #FFF;
+	font-size: 28px;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+
+}
+.features .fa:hover
+{
+	background: #303030;
+	-webkit-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+
 .jumbotron {
    height: 429px;
 	background: #453a34;
@@ -71,39 +283,302 @@ body {
 	text-align: left;
     
 }
-.jumbotron p {
+.jumbotron h1 a {
 	color: white;
-	font-size: 26px;
+	font-size: 1em;
+}
+.btn-default
+.btn-default:hover,
+.btn-default:active,
+.btn-default:visited,
+.btn-default:focus {
+    background-color: #1bbc9d;
+    color: white;
+}
+.btn-succes,
+.btn-succes:hover,
+.btn-succes:active,
+.btn-succes:visited,
+.btn-succes:focus {
+    background-color: #b0cd3b;
+    color: white;
 }
 
 
 
 
-/*..round cycle ...*/
-.circle-singleline {
-    width:101px;
-    height: 101px;
-    border-radius: 50%;
-    font-size: 65px;
-    line-height: 101 px;
-    text-align: center;    
-    background: #313338;
-    color: #fff;
+
+/* ...................Portfolio Section.................. */
+#portfolio {
+	padding: 120px 0;
+	}
+#portfolio h2 {
+	color: white;
 }
-/*.......................Footer..........................................*/
+.categories {
+	padding-bottom: 30px;
+	text-align: center;
+}
+ul.cat li {
+	display: inline-block;
+}
+ol.type li {
+	display: inline-block;
+	margin-left: 20px;
+}
+
+.isotope-item {
+	z-index: 2
+}
+.isotope-hidden.isotope-item {
+	z-index: 1
+}
+.isotope, .isotope .isotope-item {
+	/* change duration value to whatever you like */
+	-webkit-transition-duration: 0.8s;
+	-moz-transition-duration: 0.8s;
+	transition-duration: 0.8s;
+}
+.isotope-item {
+	margin-right: -1px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.isotope {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition-property: height, width;
+	-moz-transition-property: height, width;
+	transition-property: height, width;
+}
+.isotope .isotope-item {
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition-property: -webkit-transform, opacity;
+	-moz-transition-property: -moz-transform, opacity;
+	transition-property: transform, opacity;
+}
+.portfolio-item {
+	margin: 15px 0;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	transition: all 0.5s ease-out;
+}
+.portfolio-item:hover {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+}
+.portfolio-item .hover-bg {
+	height: 195px;
+	overflow: hidden;
+	position: relative;
+}
+.hover-bg .hover-text {
+	position: absolute;
+	text-align: center;
+	margin: 0 auto;
+	color: #ffffff;
+	background: rgba(0, 0, 0, 0.66);
+	padding: 30% 0 0 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: all 0.5s;
+}
+.hover-bg .hover-text>h4 {
+	text-transform: uppercase;
+	opacity: 0;
+	color: #fff;
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+	transition: all 0.3s;
+}
+.hover-bg:hover .hover-text>h4 {
+	opacity: 1;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+}
+.hover-bg .hover-text>i {
+	opacity: 0;
+	-webkit-transform: translateY(0);
+	transform: translateY(0);
+	transition: all 0.3s;
+}
+.hover-bg:hover .hover-text>i {
+	opacity: 1;
+	-webkit-backface-visibility: hidden;
+	-webkit-transform: translateY(100%);
+	transform: translateY(100%);
+}
+.hover-bg:hover .hover-text {
+	opacity: 1;
+}
+#portfolio i.fa {
+	font-size: 20px;
+	padding: 5px;
+	color: #E87E04;
+}
+/*..........................CONTACT PAGE.....................*/
+#contact
+{
+	background: #303030;
+	color: #EEE;
+	padding: 80px 0 80px 0;
+}
+#contact h2 { font-weight: 400; }
+#contact .text-center p { padding: 0 0 60px 0; }
+#contact h2, #contact h3 { padding: 0 0 20px 0; }
+#contact .form-control
+{
+	background: transparent;
+	border: 1px solid #444;
+	border-radius: 0px;
+	color: #FFF;
+	margin: 10px 0 10px 0;
+}
+#contact input { height: 60px; }
+#contact .form-control:focus
+{
+	background: #444444;
+	border-color: transparent;
+	box-shadow: none;
+}
+#contact input[type="submit"]
+{
+	color: #FFF;
+	font-weight: 600;
+	letter-spacing: 1px;
+	width: 220px;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+#contact input[type="submit"]:hover
+{
+	background-color: #1bbc9d;
+	border-color: transparent;
+	color: #FFF;
+}
+#contact .address
+{
+	padding: 20px;
+	padding-top: 0;
+	margin: 0;
+}
+#contact .fa
+{
+	color: #80cd32;
+	font-size: 20px;
+	padding: 6px 10px 6px 0;
+}
+
+a {	color: #80cd32; }
+a:hover, a:active 
+{
+	color:#80cd32;
+	text-decoration: none;
+}
+
+
+
+/*...........................FOOTER.............................*/
+
 .footer {
     
     
    background: #2E2F31;
-     padding: .8rem;
-    position: fixed;
+     padding: .5rem;
     left: 0;
     bottom: 0;
     width: 100%;
     color: white;
 }
+.bottom-title
+{
+    color: whitesmoke;
+}
+/* starttemplatemo  go top */
+.go-top 
+{
+	background-color: #80cd32;
+	border-radius: 50%;
+	bottom: 2em;
+	right: 2em;
+	color: #FFF;
+	display: none;
+	position: fixed;
+	text-decoration: none;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	text-align: center;
+}
+
+.btn-dark,
+.btn-dark:hover,
+.btn-dark:active,
+.btn-dark:visited,
+.btn-dark:focus {
+    background-color: #313337;
+    color: white;
+}
 
 
-footer p {
-   
+
+.btn-dark:hover, .btn-dark:active{
+    background-color: #1bbc9d;
+        color: white;
+
+}
+
+.go-top:hover {	color: #F9F9F9; }
+/* end templatemo go top */
+
+/*....................end FOOTER PAGE...........................*/
+
+
+
+@media (max-width: 1024px) {
+#about img {
+	float: left;
+	margin-bottom: 20px;
+}
+}
+
+@media only screen and (max-width: 1199px) {
+	.carousel h1 { font-size: 30px; }
+	.carousel h2 { font-size: 24px; }
+}
+
+/* start templatemo 768 media quires */
+@media only screen and ( max-width: 768px ) {
+	.navbar-default .navbar-brand {	margin-left: 20px; }
+	.navbar-default .navbar-nav	{ margin: 0; }
+	.navbar-default .navbar-collapse
+	{
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+	
+	
+}
+
+@media only screen and ( max-width: 680px ) {
+	.navbar-default .navbar-nav li a { bottom: 1px; line-height: normal; height: 100%; }
+    jumbotron h1 p
+    {
+        text-align: center;
+        float: left;
+        padding: 20px;
+    }
+
+/* start templatemo 600 media quires */
+@media only screen and ( max-width: 640px ) {	
+	
+	
 }
